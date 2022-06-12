@@ -6,7 +6,7 @@ const products = require('../../products.json');
 const productsList = [...products];
 
 router.get('/', (req,res) => {
-    res.json(JSON.stringify(products))
+    res.json(productsList);
 });
 
 router.post('/', (req,res) => {
